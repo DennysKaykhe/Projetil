@@ -99,22 +99,22 @@
             }
         }
 
-        double anguloRad = angulo * (pi / 180);
+double anguloRad = angulo * (pi / 180);
 
-        alcance = (Math.Pow(velocidade, 2) * Math.Sin(2 * anguloRad)) / constante;
+alcance = (Math.Pow(velocidade, 2) * Math.Sin(2 * anguloRad)) / constante;
 
-        altura = (Math.Pow(velocidade * Math.Sin(anguloRad), 2)) / (2 * constante);
+altura = (Math.Pow(velocidade * Math.Sin(anguloRad), 2)) / (2 * constante);
 
-        Console.Write($"\nAlcance........: ");
+Console.Write($"\nAlcance........: ");
 
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.Write($"{alcance:F2}");
-        Console.ResetColor();
-        Console.Write(" m");
+Console.ForegroundColor = ConsoleColor.Green;
+Console.Write($"{alcance:F2}");
+Console.ResetColor();
+Console.Write(" m");
 
-        Console.Write($"\nAltura máxima..: ");
+Console.Write($"\nAltura máxima..: ");
 
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.Write($"{altura:F2}");
-        Console.ResetColor();
-        Console.Write(" m");
+Console.ForegroundColor = ConsoleColor.Green;
+Console.Write($"{altura:F2}");
+Console.ResetColor();
+Console.Write(" m");

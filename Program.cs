@@ -1,4 +1,4 @@
-﻿        double velocidade;
+﻿﻿        double velocidade;
         double angulo;
         double pi = 3.14159;
         double constante = 9.80665;
@@ -40,22 +40,22 @@
         Console.ReadKey();
         Console.Clear();
 
-        Console.WriteLine("   ▂ ▃ ▅ ▆ █ Projétil █ ▆ ▅ ▃ ▂");
+        Console.WriteLine("--------- Projétil ---------");
 
-        // Guarda a linha do cursor para posicionar mensagens de erro depois
+        
         int linhaInputVelocidade = Console.CursorTop;
 
         while (true)
         {
             Console.SetCursorPosition(0, linhaInputVelocidade);
             Console.Write("Entre com a velocidade, em m/s..: ");
-            // Limpa o resto da linha para apagar entrada anterior
+            
             Console.Write(new string(' ', Console.WindowWidth - "Entre com a velocidade, em m/s..: ".Length));
             Console.SetCursorPosition("Entre com a velocidade, em m/s..: ".Length, linhaInputVelocidade);
 
-            string inputVel = Console.ReadLine();
+            string inputVel = Console.ReadLine()!;
 
-            // Limpa a linha da mensagem de erro
+            
             Console.SetCursorPosition(0, linhaInputVelocidade + 1);
             Console.Write(new string(' ', Console.WindowWidth));
 
@@ -81,7 +81,7 @@
             Console.Write(new string(' ', Console.WindowWidth - "Entre com o Ângulo, em graus....: ".Length));
             Console.SetCursorPosition("Entre com o Ângulo, em graus....: ".Length, linhaInputAngulo);
 
-            string inputAng = Console.ReadLine();
+            string inputAng = Console.ReadLine()!;
 
             Console.SetCursorPosition(0, linhaInputAngulo + 1);
             Console.Write(new string(' ', Console.WindowWidth));
@@ -118,3 +118,8 @@ Console.ForegroundColor = ConsoleColor.Green;
 Console.Write($"{altura:F2}");
 Console.ResetColor();
 Console.Write(" m");
+
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("\n\nPrecione qualquer tecla para finalizar o programa!");
+Console.ResetColor();
+Console.ReadKey();

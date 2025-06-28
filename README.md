@@ -10,7 +10,7 @@ Este software simula uma calculadora da equação de torricelli.
 
 Baixe o arquivo abaixo. Descompacxte na pasta desejada.
 
-[🎁 Download do arquivo .zip](dist/CalculaduraDaEquaçãoDeTorricelli.zip)
+[🎁 Download do arquivo .zip](Dist/CalculaduraDaEquaçãoDeTorricelli.zip)
 
 Execute utilizando o comando:
 
